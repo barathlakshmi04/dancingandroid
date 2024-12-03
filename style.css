@@ -1,0 +1,269 @@
+body{
+    background-color :antiquewhite;
+}
+.main{
+     
+    width: 600px;
+    height: 700px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.head{
+     
+    width: 300px;
+    height: 200px;
+    border-radius: 180px 180px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: green;
+   
+}
+
+.eyes{
+     
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-eye, .left-eye{
+    width: 30px;
+    height: 30px;
+     
+    border-radius: 60%;
+    background-color:white;
+}
+.left-eye{
+    margin-left: 20px ;
+}
+.right-eye{
+    margin-left: 20px;
+}
+.body{
+     
+    width: 87%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.left-arm, .right-arm, .main-body{
+     
+    background-color: green;
+}
+
+
+.left-arm, .right-arm, .left-leg, .right-leg{
+    height: 180px;
+    width: 60px;
+    border-radius: 120px;
+    margin: 30px;
+     
+    background-color: green;
+}
+
+
+.main-body{
+    width: 300px;
+    border-radius: 0 0 100px 100px;
+    
+}
+
+.body2{
+     
+    display: flex;
+    position: relative;
+    bottom: 120px;
+}
+
+.main:hover .head{
+    animation: a 1.5s linear infinite;
+}
+.main:hover .eye{
+    animation: e 1.5s linear infinite;
+}
+.main:hover .left-leg{
+    
+    animation:bl 0.5s linear infinite;
+}
+.main:hover .right-leg{
+   
+   animation:br 0.5s linear infinite;
+}
+.main:hover .main-body{
+    border-radius: 100px;
+    animation: h 2s linear infinite;
+}
+.main:hover .left-arm{
+    animation: b 1.5s linear infinite;
+}
+.main:hover .right-arm{
+    animation: c 1.5s linear infinite;
+}
+
+
+@keyframes h{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    0%{
+        transform: rotate(0deg);
+
+    }
+}
+@keyframes b{
+
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }  
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top center;
+    } 
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    } 
+}
+@keyframes c{
+
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+        }
+    25%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }  
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }  
+}
+@keyframes bl{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(15deg);
+        transform-origin: top center;
+    }
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+@keyframes br{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+    50%{
+        transform: rotate(-15deg);
+        transform-origin: top center;
+    }
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center;
+    }
+}
+@keyframes a{
+    0%{
+        width: 350px;
+    }
+    25%{
+        width: 420px;
+    }
+    50%{
+        width: 350px;
+    }
+    75%{
+        width: 420px;
+    }
+    100%{
+        width: 350px;
+    }
+}
+
+@keyframes e{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-200);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-200);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media screen and(max-width:600px) {
+    .head{
+        width: auto;
+        position: unset;
+    }
+    .left-eye{
+        width: auto;
+        position: unset;
+    }
+    .right-eye{
+        width: auto;
+        position: unset;
+    }
+    .main-body{
+        width: auto;
+        position: unset;
+    }
+    .left-arm{
+        width: auto;
+        position: unset; 
+    }
+    .right-arm{
+        width: auto;
+        position: unset;
+    }
+    .left-leg{
+        width: auto;
+        position: unset;
+    }
+    .right-leg{
+        width: auto;
+        position: unset;
+    }
+    
+}
